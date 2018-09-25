@@ -1,0 +1,102 @@
+#include "dec.weather"
+#include "actors/NPC.dec"
+
+//Decorations
+
+Actor JunkPile1: Actor 19805
+{
+	//$Category "Decorations/Shop"
+	Tag "Junk"
+	Radius 12
+	Height 12
+	+SOLID
+	States
+	{
+	Spawn:
+		JUNK A -1
+		Stop
+	}
+}
+
+Actor Extinguisher: Actor 19806
+{
+	//$Category "Decorations/Shop"
+	Tag "Fire Extinguisher"
+	Radius 8
+	Height 32
+	+SOLID
+	States
+	{
+	Spawn:
+		EXTN A -1
+		Stop
+	}
+}
+
+//Items
+Actor Karma : Ammo
+{
+	Inventory.MaxAmount 99999
+	Ammo.BackPackMaxAmount 150
+	+INVENTORY.IGNORESKILL
+}
+
+Actor KarmaKoin : CustomInventory 10492
+{
+	//$Category "Items/Money"
+	Tag "KarmaKoin"
+	Radius 48
+	Height 64
+	Inventory.PickupMessage "Got a koin."
+	States
+	{
+	Spawn:
+		KOIN A -1
+		loop
+	Pickup:
+		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("UsePrompt"), "Success")
+		Fail
+	Success:
+		TNT1 A 0 A_PlaySound("misc/p_pkup")
+		TNT1 A 0 A_GiveInventory("Karma", 1)
+		Stop
+	}
+}
+
+Actor KarmaKoinBag : KarmaKoin 10493
+{
+	//$Category "Items/Money"
+	Inventory.PickupMessage "Got a bag of koins."
+	+COUNTITEM
+	States
+	{
+	Spawn:
+		KBAG A -1
+		Loop
+	Pickup:
+		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("UsePrompt"), "Success")
+		Fail
+	Success:
+		TNT1 A 0 A_PlaySound("misc/p_pkup")
+		TNT1 A 0 A_GiveInventory("Karma", 15)
+		Stop
+	}
+}
+
+// Inventory Tokens
+
+Actor Token : Inventory { +INVENTORY.UNDROPPABLE }
+
+Actor UsePrompt : Token {}
+
+// Processors
+
+Actor UsePromptProc : CustomInventory
+{
+	States
+	{
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteWithResult("UsePrompt")
+		Stop
+	}
+}

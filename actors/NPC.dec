@@ -1,0 +1,46 @@
+//NPC's
+
+Actor NPC_Vagrant: Actor 19801
+{
+	//$Category "NPC"
+	Tag "Vagrant"
+	Radius 24
+	Height 64
+	+SOLID
+	States
+	{
+	Spawn:
+		VAGR A -1
+		Stop
+	}
+}
+
+Actor NPC_Halfie: Actor 19802
+{
+	//$Category "NPC"
+	Tag "Halfie"
+	Radius 24
+	Height 64
+	+SOLID
+	States
+	{
+	Spawn:
+		HALF A -1
+		Stop
+	}
+}
+
+Actor NPC_Shop_Gunsmith: Actor 19803
+{
+	//$Category "NPC"
+	Tag "DeadStick"
+	Radius 24
+	Height 64
+	+SOLID
+	States
+	{
+	Spawn:
+		SHP1 A -1
+		Stop
+	}
+}

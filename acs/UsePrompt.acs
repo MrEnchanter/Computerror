@@ -1,0 +1,22 @@
+#library "UsePrompt.o"
+#include "zcommon.acs"
+
+#define HMID_PressUse 207700
+
+Script "UsePrompt" (void)
+{
+	if(GetPlayerInput(-1, INPUT_BUTTONS) & BT_USE)
+	{
+		SetResultValue(true); // <-- this tells Decorate to jump to "Used"
+		terminate;
+	}
+	
+	SetResultValue(false); // <-- this tells Decorate to not jump, and thus fail
+	if (CheckInventory ("UsePrompt") == 0)
+	{
+		GiveInventory ("UsePrompt", 1 );
+		HudMessage(s:"press [use] to pick up"; HUDMSG_PLAIN, HMID_PressUse, CR_Untranslated, 0.5, 0.55, 3.7);
+		Delay (105);
+		TakeInventory ("UsePrompt", 1 );
+	}
+}

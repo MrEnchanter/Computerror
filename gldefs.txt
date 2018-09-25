@@ -1,0 +1,33 @@
+//npc brightmaps
+brightmap sprite VAGRA0
+{
+   map "graphics/brightmaps/VAGRA0BM.png"
+   disablefullbright
+}
+
+brightmap sprite HALFA0
+{
+   map "graphics/brightmaps/HALFA0BM.png"
+   disablefullbright
+}
+
+brightmap sprite SHP1A0
+{
+   map "graphics/brightmaps/SHP1A0BM.png"
+   disablefullbright
+}
+
+//item brightmaps
+brightmap sprite KOINA0
+{
+   map "graphics/brightmaps/KOINA0BM.png"
+   disablefullbright
+}
+
+//weapon brightmaps
+brightmap sprite PISGA0
+{
+   map "graphics/brightmaps/pistol/PISGA0BM.png"
+   disablefullbright
+}
+
