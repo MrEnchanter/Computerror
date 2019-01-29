@@ -1,0 +1,47 @@
+//Decorations
+
+Actor JunkPile1: Actor 19805
+{
+	//$Category "Decorations/Shop"
+	Tag "Junk"
+	Radius 12
+	Height 12
+	+SOLID
+	States
+	{
+	Spawn:
+		JUNK A -1
+		Stop
+	}
+}
+
+Actor Extinguisher: Actor 19806
+{
+	//$Category "Decorations/Shop"
+	Tag "Fire Extinguisher"
+	Radius 8
+	Height 32
+	+SOLID
+	States
+	{
+	Spawn:
+		EXTN A -1
+		Stop
+	}
+}
+
+Actor FlamingTrashCan: Actor 19807
+{
+	//$Category "Decorations/Light Sources"
+	Tag "Flaming Trash Can"
+	Radius 8
+	Height 32
+	Scale 0.5
+	+SOLID
+	States
+	{
+	Spawn:
+		FCAN ABC 3
+		Loop
+	}
+}

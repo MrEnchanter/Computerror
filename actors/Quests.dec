@@ -1,0 +1,38 @@
+// Processors
+
+/////////////////////////////////////////////////////////
+// MedallionQuest // Grants Access to Deadstick Quests //
+/////////////////////////////////////////////////////////
+
+Actor MedallionProc : CustomInventory 10499
+{
+	//$Category "Items/Money"
+	Tag "Medallion"
+	Radius 12
+	Height 12
+	Inventory.PickupMessage "Got the Medallion."
+	States
+	{
+	Spawn:
+		TNT1 A -1
+		loop
+	Pickup:
+		TNT1 A 0 A_GiveInventory ("Medallion")
+		Stop
+	}
+}
+
+/////////////////////////////////////////////
+// UpgradeChipQuest // 1st Deadstick Quest //
+/////////////////////////////////////////////
+
+Actor UpgradeChip1Proc : CustomInventory 10500
+{
+	States
+	{
+	Pickup:
+		TNT1 A 0 A_GiveInventory (UpgradeChip1)
+		Stop
+	}
+}
+

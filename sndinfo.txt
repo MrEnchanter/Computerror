@@ -3,5 +3,9 @@ AmbientRain a_rain
 $Ambient 1 AmbientRain POINT CONTINUOUS 1.0
 $Ambient 2 AmbientRain CONTINUOUS 1.0
 
-door_open	door_open
-door_close	door_close
+sound/dropen	dropen
+sound/drcls	drclose
+sound/quest quest
+
+misc/chat SILENCE	// Doom 2 chat sound
+misc/chat2 SILENCE 	// Chat sound for everything else

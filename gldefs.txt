@@ -1,33 +1,22 @@
-//npc brightmaps
-brightmap sprite VAGRA0
+#include "graphics/brightmaps/npcs/npc.gldef"
+#include "graphics/brightmaps/items/item.gldef"
+#include "graphics/brightmaps/weapons/weapon.gldef"
+#include "graphics/brightmaps/textures/texture.gldefs"
+
+//Dynamic Lights
+flickerlight Flame
 {
-   map "graphics/brightmaps/VAGRA0BM.png"
-   disablefullbright
+    color 1.0 0.5 0.0
+    size 32
+    secondarySize 48
+    chance 0.5
+    offset 0 12 0
 }
 
-brightmap sprite HALFA0
+object FlamingTrashCan
 {
-   map "graphics/brightmaps/HALFA0BM.png"
-   disablefullbright
-}
-
-brightmap sprite SHP1A0
-{
-   map "graphics/brightmaps/SHP1A0BM.png"
-   disablefullbright
-}
-
-//item brightmaps
-brightmap sprite KOINA0
-{
-   map "graphics/brightmaps/KOINA0BM.png"
-   disablefullbright
-}
-
-//weapon brightmaps
-brightmap sprite PISGA0
-{
-   map "graphics/brightmaps/pistol/PISGA0BM.png"
-   disablefullbright
+    frame FCANA { light Flame }
+    frame FCANB { light Flame }
+    frame FCANC { light Flame }
 }
 

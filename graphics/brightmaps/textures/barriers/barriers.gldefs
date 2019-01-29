@@ -1,0 +1,6 @@
+
+//texture brightmaps
+brightmap texture ROADBLOK
+{
+   map "graphics/brightmaps/textures/barriers/ROADBLOKBM.png"
+}

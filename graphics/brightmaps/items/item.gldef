@@ -1,0 +1,7 @@
+
+//item brightmaps
+brightmap sprite KOINA0
+{
+   map "graphics/brightmaps/items/KOINA0BM.png"
+   disablefullbright
+}

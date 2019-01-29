@@ -1,0 +1,7 @@
+
+//weapon brightmaps
+brightmap sprite PISGA0
+{
+   map "graphics/brightmaps/weapons/pistol/PISGA0BM.png"
+   disablefullbright
+}

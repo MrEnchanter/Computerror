@@ -1,0 +1,19 @@
+
+//npc brightmaps
+brightmap sprite VAGRA0
+{
+   map "graphics/brightmaps/npcs/VAGRA0BM.png"
+   disablefullbright
+}
+
+brightmap sprite HALFA0
+{
+   map "graphics/brightmaps/npcs/HALFA0BM.png"
+   disablefullbright
+}
+
+brightmap sprite SHP1A0
+{
+   map "graphics/brightmaps/npcs/SHP1A0BM.png"
+   disablefullbright
+}

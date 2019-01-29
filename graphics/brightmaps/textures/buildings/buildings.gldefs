@@ -1,0 +1,51 @@
+
+//texture brightmaps
+brightmap texture BUILD001
+{
+   map "graphics/brightmaps/textures/buildings/BUILD001BM.png"
+}
+
+brightmap texture BUILD002
+{
+   map "graphics/brightmaps/textures/buildings/BUILD002BM.png"
+}
+
+brightmap texture BUILD003
+{
+   map "graphics/brightmaps/textures/buildings/BUILD003BM.png"
+}
+
+brightmap texture BUILD004
+{
+   map "graphics/brightmaps/textures/buildings/BUILD004BM.png"
+}
+
+brightmap texture BUILD005
+{
+   map "graphics/brightmaps/textures/buildings/BUILD005BM.png"
+}
+
+brightmap texture BUILD006
+{
+   map "graphics/brightmaps/textures/buildings/BUILD006BM.png"
+}
+
+brightmap texture BUILD007
+{
+   map "graphics/brightmaps/textures/buildings/BUILD007BM.png"
+}
+
+brightmap texture BUILD008
+{
+   map "graphics/brightmaps/textures/buildings/BUILD008BM.png"
+}
+
+brightmap texture BUILD009
+{
+   map "graphics/brightmaps/textures/buildings/BUILD005BM.png"
+}
+
+brightmap texture BUILD010
+{
+   map "graphics/brightmaps/textures/buildings/BUILD005BM.png"
+}

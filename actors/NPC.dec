@@ -1,4 +1,4 @@
-//NPC's
+//NPCs
 
 Actor NPC_Vagrant: Actor 19801
 {
