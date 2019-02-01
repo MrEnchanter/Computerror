@@ -1,0 +1,22 @@
+#include "zcommon.acs"
+
+//Quest Log
+
+Script "ShowQuestMaster" (void) //Checks Quest Tokens
+{
+	ACS_NamedExecuteAlways ("ShowQuestUpgradeChip1", 0, 0, 0, 0);
+}
+
+Script "ShowQuestUpgradeChip1" (void) //Upgrade Chip 1 Quest
+{
+	if (CheckInventory("UpgradeChipQuest1") == 1)
+	{
+		Setfont ("Quest");
+		HudMessage(s:"A"; HUDMSG_FADEINOUT, 661, 0, 0.9, 0.1, 5.0, 0.5, 1.0);
+		Delay (15);
+		SetFont("BIGFONT");
+		HudMessage(s:"Get the upgrade chip for Deadstick."; HUDMSG_FADEINOUT, 662, CR_WHITE, 0.9, 0.15, 4.5, 0.5, 1.0);
+	}
+	else
+		ACS_NamedExecuteAlways ("ShowQuestMaster", 0, 0, 0, 0);
+}

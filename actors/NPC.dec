@@ -44,3 +44,18 @@ Actor NPC_Shop_Gunsmith: Actor 19803
 		Stop
 	}
 }
+
+Actor NPC_Police_Enforcer: Actor 19804
+{
+	//$Category "NPC"
+	Tag "Enforcer"
+	Radius 24
+	Height 64
+	+SOLID
+	States
+	{
+	Spawn:
+		RCOP A -1
+		Stop
+	}
+}

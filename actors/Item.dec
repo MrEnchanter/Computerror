@@ -53,7 +53,7 @@ Actor KarmaKoinBag : KarmaKoin 10493
 Actor Token : Inventory { +INVENTORY.UNDROPPABLE }
 
 Actor Medallion : Token {}
-Actor UpgradeChipQuest : Token {}
+Actor UpgradeChipQuest1 : Token {}
 Actor UpgradeChip1 : Token {}
 Actor UsePrompt : Token {}
 

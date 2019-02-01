@@ -1,4 +1,4 @@
-addkeysection "JonnyFive's weatherFX" WeatherFX
-addmenukey "Toggle weatherFX Effects" weather_toggle
-alias weather_toggle "Use Action_WeatherToggle"
-defaultbind F12 weather_toggle
+addkeysection "Keybinds" Keybinds
+addmenukey "Show Quest" quest_log
+alias quest_log "pukename \"ShowQuestMaster\""
+defaultbind Q

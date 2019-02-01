@@ -26,12 +26,13 @@ Actor MedallionProc : CustomInventory 10499
 // UpgradeChipQuest // 1st Deadstick Quest //
 /////////////////////////////////////////////
 
-Actor UpgradeChip1Proc : CustomInventory 10500
+Actor UpgradeChipQuest1Proc : CustomInventory 10500
 {
 	States
 	{
 	Pickup:
-		TNT1 A 0 A_GiveInventory (UpgradeChip1)
+		TNT1 A 0 A_GiveInventory ("UpgradeChipQuest1")
+		TNT1 A 0 ACS_NamedExecute ("UpgradeChipQuest1")
 		Stop
 	}
 }
