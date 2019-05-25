@@ -1,0 +1,11 @@
+
+//texture brightmaps
+brightmap texture HLBSWD01
+{
+   map "graphics/brightmaps/textures/holo/HLBSWD01BM.png"
+}
+
+brightmap texture HLBSWD02
+{
+   map "graphics/brightmaps/textures/holo/HLBSWD02BM.png"
+}

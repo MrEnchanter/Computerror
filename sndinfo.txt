@@ -1,11 +1,9 @@
-AmbientRain a_rain
+sound/dropen	"sounds/environment/dropen" // Door Open
+sound/drcls		"sounds/environment/drclose" // Door Close
+sound/quest		"sounds/game/quest.ogg" // Quest Sound
 
-$Ambient 1 AmbientRain POINT CONTINUOUS 1.0
-$Ambient 2 AmbientRain CONTINUOUS 1.0
+misc/chat 		"sounds/game/SILENCE.ogg" 	// Doom 2 chat sound
+misc/chat2 		"sounds/game/SILENCE.ogg" 	// Chat sound for everything else
 
-sound/dropen	dropen
-sound/drcls	drclose
-sound/quest quest
-
-misc/chat SILENCE	// Doom 2 chat sound
-misc/chat2 SILENCE 	// Chat sound for everything else
+DSPISTOL		"sounds/weapons/DSPISTOL.ogg" // Pistol Sound
+DSSHOTGN		"sounds/weapons/DSSHOTGN.ogg" // Shotgun Sound

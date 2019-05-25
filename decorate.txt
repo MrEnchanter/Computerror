@@ -1,4 +1,3 @@
-#include "actors/Weather.dec"
 #include "actors/NPC.dec"
 #include "actors/Decor.dec"
 #include "actors/Item.dec"

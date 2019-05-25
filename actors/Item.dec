@@ -56,6 +56,7 @@ Actor Medallion : Token {}
 Actor UpgradeChipQuest1 : Token {}
 Actor UpgradeChip1 : Token {}
 Actor UsePrompt : Token {}
+Actor IsPlaying : Token {}
 
 // Vagrant 1 Story Dialogue Tokens
 Actor VagrantStory1 : Token {}

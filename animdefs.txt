@@ -1,0 +1,3 @@
+texture HLBSWD01
+    pic 1 tics 1
+    pic 2 tics 1

@@ -3,29 +3,38 @@ interpolatehealth true;
 
 statusbar fullscreen, forcescaled, fullscreenoffsets
 {
-    //health
-	drawimage "HUD_HLTH",10, -30;
-    drawnumber 3, smallfont, white, health, drawshadow, 55, -28;
+	InInventory "IsPlaying"
+	{
+		//health
+		drawimage "HUD_HLTH",10, -30;
+		drawnumber 3, smallfont, white, health, drawshadow, 55, -28;
 
-    //armor
-	drawimage "HUD_ARMR",90, -30;
-    drawnumber 3, smallfont, white, armor, drawshadow, whennotzero, 130, -28;
+		//armor
+		drawimage "HUD_ARMR",90, -30;
+		drawnumber 3, smallfont, white, armor, drawshadow, whennotzero, 130, -28;
 
-    //ammo
-    drawnumber 3, smallfont, gray, ammo1, drawshadow, -62, -28;
-	drawnumber 3, smallfont, gray, ammo2, drawshadow, -30, -28;
+		//ammo
+		drawnumber 3, smallfont, gray, ammo1, drawshadow, -62, -28;
+		drawnumber 3, smallfont, gray, ammo2, drawshadow, -30, -28;
 	
-	//kurrency
-	drawimage "HUD_KASH",-85, -75;
-	drawnumber 5, smallfont, white, ammo Karma, drawshadow, -30, -65;
+		//kurrency
+		drawimage "HUD_KASH",-85, -75;
+		drawnumber 5, smallfont, white, ammo Karma, drawshadow, -30, -65;
+	}
 }
 
 statusbar inventory // Standard bar overlay (ZDoom Addition)
 {
-    drawinventorybar Doom, 7, INDEXFONT, 70, 200;
+	InInventory "IsPlaying"
+	{    
+		drawinventorybar Doom, 7, INDEXFONT, 70, 200;
+	}
 }
 
 statusbar inventoryfullscreen // ZDoom HUD overlay.
 {
-    drawinventorybar Doom, translucent, 7, INDEXFONT, 200, 370;
+	InInventory "IsPlaying"
+	{
+		drawinventorybar Doom, translucent, 7, INDEXFONT, 200, 370;
+	}
 }

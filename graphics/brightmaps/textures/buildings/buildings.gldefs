@@ -49,3 +49,8 @@ brightmap texture BUILD010
 {
    map "graphics/brightmaps/textures/buildings/BUILD005BM.png"
 }
+
+brightmap texture TRAINCAR
+{
+   map "graphics/brightmaps/textures/buildings/TRAINCARBM.png"
+}

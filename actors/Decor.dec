@@ -45,3 +45,19 @@ Actor FlamingTrashCan: Actor 19807
 		Loop
 	}
 }
+
+Actor StrobeLight: Actor 20202
+{
+	//$Category "Decorations/Light Sources"
+	Tag "Strobe Light"
+	Radius 8
+	Height 8
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+		{
+			Spawn:
+			STRO A -1
+			Stop
+		}
+}
